@@ -9,7 +9,7 @@
 }
 
 body {
-    color: #2f2f2f;
+    color:  #fffcfc;
     font-family: 'Calibri';
 }
 
@@ -116,7 +116,7 @@ a:hover, a:active {
 }
 
 .site-header .site-title img {
-    max-height: 64px;
+    max-height: 100px;
 }
 
 /*
@@ -2112,7 +2112,7 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .footer-logo img {
-    max-width: 100%;
+    max-width: 20%;
 }
 
 .footer-navigation ul,
