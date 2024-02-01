@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>NUV युवा</title>
 
@@ -20,753 +21,691 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <style media="screen">
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
 
-html {
-    font-family: sans-serif;
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
+        html {
+            font-family: sans-serif;
+            line-height: 1.15;
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
 
-body {
-    font-family: 'Lato', sans-serif;
-    color: #ffffff;
-    font-weight: 300;
-    background: #ffffff;
-}
+        body {
+            font-family: 'Lato', sans-serif;
+            color: #ffffff;
+            font-weight: 300;
+            background: #ffffff;
+        }
 
-a {
-    color: #ffffff;
-    font-weight: 400;
-    outline: none;
-    text-decoration: none;
-    transition: 0.5s;
-}
+        a {
+            color: #ffffff;
+            font-weight: 400;
+            outline: none;
+            text-decoration: none;
+            transition: 0.5s;
+        }
 
-a:hover,
-a:active,
-a:focus {
-    outline: none;
-    text-decoration: none;
-}
+        a:hover,
+        a:active,
+        a:focus {
+            outline: none;
+            text-decoration: none;
+        }
 
-p {
-    padding: 0;
-    margin: 0 0 15px 0;
-    color: #454545;
-    font-weight: 300;
-}
+        p {
+            padding: 0;
+            margin: 0 0 15px 0;
+            color: #454545;
+            font-weight: 300;
+        }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    padding: 0;
-    margin: 0 0 15px 0;
-    color: #333333;
-    font-weight: 700;
-    
-}
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            padding: 0;
+            margin: 0 0 15px 0;
+            color: #333333;
+            font-weight: 700;
 
-h1 {
-    font-weight: 900;
-}
+        }
 
-img {
-    width: 100%;
-    height: auto;
-}
+        h1 {
+            font-weight: 900;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
 
 
 
-/**********************************/
-/***** Layout & Section Title *****/
-/**********************************/
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
+        /**********************************/
+        /***** Layout & Section Title *****/
+        /**********************************/
+        .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
 
-@media (min-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
-}
+        @media (min-width: 576px) {
+            .container {
+                max-width: 540px;
+            }
+        }
 
-@media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
-}
+        @media (min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+        }
 
-@media (min-width: 992px) {
-    .container {
-        max-width: 960px;
-    }
-}
+        @media (min-width: 992px) {
+            .container {
+                max-width: 960px;
+            }
+        }
 
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1140px;
-    }
-}
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1140px;
+            }
+        }
 
-.team-row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
+        .team-row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
 
-.column {
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-}
+        .column {
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
 
-@media (min-width: 576px) {
-    .column {
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-}
+        @media (min-width: 576px) {
+            .column {
+                -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
 
-@media (min-width: 768px) {
-    .column {
-        -ms-flex: 0 0 33.333333%;
-        flex: 0 0 33.333333%;
-        max-width: 33.333333%;
-    }
-}
+        @media (min-width: 768px) {
+            .column {
+                -ms-flex: 0 0 33.333333%;
+                flex: 0 0 33.333333%;
+                max-width: 33.333333%;
+            }
+        }
 
-@media (min-width: 992px) {
-    .column {
-        -ms-flex: 0 0 25%;
-        flex: 0 0 25%;
-        max-width: 25%;
-    }
-}
+        @media (min-width: 992px) {
+            .column {
+                -ms-flex: 0 0 25%;
+                flex: 0 0 25%;
+                max-width: 25%;
+            }
+        }
 
-.section-title {
-    width: 100%;
-    text-align: center;
-    padding: 45px 0 30px 0;
-}
+        .section-title {
+            width: 100%;
+            text-align: center;
+            padding: 45px 0 30px 0;
+        }
 
-.section-title::after {
-    position: absolute;
-    content: "";
-    width: 50px;
-    height: 5px;
-    left: calc(50% - 25px);
-    background: #ffffff;
-}
+        .section-title::after {
+            position: absolute;
+            content: "";
+            width: 50px;
+            height: 5px;
+            left: calc(50% - 25px);
+            background: #ffffff;
+        }
 
-.section-title h1 {
-    color: #353535;
-    font-size: 50px;
-    letter-spacing: 5px;
-    margin-bottom: 5px;
-}
+        .section-title h1 {
+            color: #353535;
+            font-size: 50px;
+            letter-spacing: 5px;
+            margin-bottom: 5px;
+        }
 
-@media(max-width: 767.98px) {
-    .section-title h1 {
-        font-size: 40px;
-        letter-spacing: 3px;
-    }
-}
+        @media(max-width: 767.98px) {
+            .section-title h1 {
+                font-size: 40px;
+                letter-spacing: 3px;
+            }
+        }
 
-@media(max-width: 567.98px) {
-    .section-title h1 {
-        font-size: 30px;
-        letter-spacing: 2px;
-    }
-}
+        @media(max-width: 567.98px) {
+            .section-title h1 {
+                font-size: 30px;
+                letter-spacing: 2px;
+            }
+        }
 
-     
 
-        .team-4 {
-    margin-bottom: 30px;
-    background: #ffffff;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-}
-.team-4:hover {
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-}
+        /*****/
+        /**********************************/
+        /********* Team #10 Style *********/
+        /**********************************/
+        .team-10 {
+            text-align: center;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
 
-.team-4 .team-img {
-    position: relative;
-    font-size: 0;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    transition: all .3s;
-}
+        .team-10 .team-img {
+            border-radius: 5px;
+            overflow: hidden;
+        }
 
-.team-4:hover .team-img {
-    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
-    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
-}
+        .team-10 .team-img img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
 
-.team-4 .team-img img {
-    width: 100%;
-    height: auto;
-}
+        .team-10 .team-content {
+            position: relative;
+            width: 90%;
+            padding: 20px;
+            margin: -60px auto 0 auto;
+            background: #ffffff;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            border-radius: 5px;
+        }
 
-.team-4 .team-img .team-content {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, .5);
-    transition: all .6s;
-    z-index: 1;
-    opacity: 0;
-}
+        .team-10:hover .team-content {
+            transform: rotateY(180deg);
+        }
 
-.team-4 .team-img .team-content p {
-    color: #000000;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 22px;
-    margin: 0;
-}
+        .team-10 .team-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            background: #ffffff;
+            border-radius: 5px;
+            transform: rotateY(180deg);
+        }
 
-.team-4:hover .team-img .team-content {
-    opacity: 1;
-}
+        .team-10 .team-content h2 {
+            font-size: 25px;
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
 
-.team-4 .team-content {
-    padding: 20px;
-    text-align: center;
-}
+        .team-10 .team-content h3 {
+            font-size: 16px;
+            font-weight: 300;
+        }
 
-.team-4 .team-content h2 {
-    font-size: 25px;
-    font-weight: 400;
-    letter-spacing: 2px;
-}
+        .team-10 .team-content p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+        }
 
-.team-4 .team-content h3 {
-    font-size: 16px;
-    font-weight: 300;
-    margin-bottom: 0;
-}
+        .team-10 .team-social {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0;
+        }
 
-.team-4 .team-social {
-    font-size: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+        .team-10 .team-social a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            margin-right: 5px;
+            padding: 11px 0 10px 0;
+            font-size: 16px;
+            line-height: 16px;
+            text-align: center;
+            color: #ffffff;
+            border-radius: 5px;
+            transition: all .3s;
+        }
 
-.team-4 .team-social a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin-right: 5px;
-    padding: 11px 0 10px 0;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 16px;
-    text-align: center;
-    color: #ffffff;
-    transition: all .3s;
-}
+        .team-10 .team-social a.social-tw {
+            background: #00acee;
+        }
 
-.team-4 .team-social a.social-tw {
-    background: #00acee;
-}
+        .team-10 .team-social a.social-fb {
+            background: #3b5998;
+        }
 
-.team-4 .team-social a.social-fb {
-    background: #3b5998;
-}
+        .team-10 .team-social a.social-li {
+            background: #0e76a8;
+        }
 
-.team-4 .team-social a.social-li {
-    background: #0e76a8;
-}
+        .team-10 .team-social a.social-in {
+            background: #3f729b;
+        }
 
-.team-4 .team-social a.social-in {
-    background: #3f729b;
-}
+        .team-10 .team-social a.social-yt {
+            background: #c4302b;
+        }
 
-.team-4 .team-social a.social-yt {
-    background: #c4302b;
-}
+        .team-10 .team-social a:last-child {
+            margin-right: 0;
+        }
 
-.team-4 .team-social a:last-child {
-    margin-right: 0;
-}
+        .team-10 .team-social a:hover {
+            background: #222222;
+        }
+    </style>
 
-.team-4 .team-social a:hover {
-    color: #ffffff;
-    background: #222222;
-}
-
-       </style>
-     
 </head>
+
 <body class="elements-page">
 
-<header class="site-header">
-    <div class="header-bar">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-10 col-lg-2 order-lg-1">
-                    <div class="site-branding">
-                        <div class="site-title">
-                            <a href="#"><img src="images/cc_logo.png" alt="logo"></a>
-                        </div><!-- .site-title -->
-                    </div><!-- .site-branding -->
-                </div><!-- .col -->
+    <header class="site-header">
+        <div class="header-bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-10 col-lg-2 order-lg-1">
+                        <div class="site-branding">
+                            <div class="site-title">
+                                <a href="#"><img src="images/cc_logo.png" alt="logo"></a>
+                            </div><!-- .site-title -->
+                        </div><!-- .site-branding -->
+                    </div><!-- .col -->
 
-                <div class="col-2 col-lg-7 order-3 order-lg-2">
-                    <nav class="site-navigation">
-                        <div class="hamburger-menu d-lg-none">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div><!-- .hamburger-menu -->
+                    <div class="col-2 col-lg-7 order-3 order-lg-2">
+                        <nav class="site-navigation">
+                            <div class="hamburger-menu d-lg-none">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div><!-- .hamburger-menu -->
 
-                        <ul>
-                            <li><a href="../nuvyuva/index.html">Home</a></li>
-                            <li><a href="../nuvyuva/elements.html">About us</a></li>
-                            <li><a href="../nuvyuva/events.html">Events</a></li>
-                            <li><a href="../nuvyuva/events-news.html">Gallery</a></li>
-                            <li><a href="../nuvyuva/contact.html">Contact</a></li>
-                        </ul>
-                    </nav><!-- .site-navigation -->
-                </div><!-- .col -->
+                            <ul>
+                                <li><a href="../nuvyuva/index.html">Home</a></li>
+                                <li><a href="../nuvyuva/elements.html">About us</a></li>
+                                <li><a href="../nuvyuva/events.html">Events</a></li>
+                                <li><a href="../nuvyuva/events-news.html">Gallery</a></li>
+                                <li><a href="../nuvyuva/contact.html">Contact</a></li>
+                            </ul>
+                        </nav><!-- .site-navigation -->
+                    </div><!-- .col -->
 
-               
-            </div><!-- .row -->
-        </div><!-- .container-fluid -->
-    </div><!-- .header-bar -->
 
-    <div class="page-header elements-page-header">
+                </div><!-- .row -->
+            </div><!-- .container-fluid -->
+        </div><!-- .header-bar -->
+
+        <div class="page-header elements-page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <header class="entry-header">
+                            <h1 class="entry-title">About Us</h1>
+                        </header>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header><!-- .site-header -->
+
+    <div class="homepage-info-section">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 col-md-4 col-lg-5">
+                    <figure>
+                        <img src="images/cc_logo.png" alt="logo">
+                    </figure>
+                </div>
+
+                <div class="col-12 col-md-8 col-lg-7">
                     <header class="entry-header">
-                        <h1 class="entry-title">About Us</h1>
+                        <h2 class="entry-title">What is NUV युवा 2.0 ?</h2>
                     </header>
+
+                    <div class="entry-content">
+                        <p>NUV-YUVA is an inter-college festival that encourages students from various institutions all
+                            over gujarat to demonstrate their ability and talents in various fields and events. The
+                            event aims to bring together cultural, technical and sports aspects and merge them together
+                            with knowledge and enjoyment.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</header><!-- .site-header -->
+    <div>
+        <header class="entry-header elements-heading">
+            <center>
+                <h2 class="entry-title" style="padding-right: 3%;">Our Team</h2>
+            </center>
+        </header>
 
-<div class="homepage-info-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-4 col-lg-5">
-                <figure>
-                    <img src="images/cc_logo.png" alt="logo">
-                </figure>
+        <div class="container">
+            <div class="section-title">
             </div>
+            <div class="row">
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="../nuvyuva/images/jashit.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Jashit Kandhari</h2>
+                            <h3>PRESIDENT</h3>
+                            <div class="team-overlay">
+                                <p>🌟 Meet Jashit Kandhari, the driving force behind our Cultural Committee! 🎭✨</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="../nuvyuva/images/rucha.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Rucha Soni</h2>
+                            <h3>PRESIDENT</h3>
+                            <div class="team-overlay">
+                                <p>🌟 Meet Rucha Soni, the driving force behind our Cultural Committee! 🎭✨</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="../nuvyuva/images/pratham.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Pratham Vajifdar</h2>
+                            <h3>TREASURER</h3>
+                            <div class="team-overlay">
+                                <p>💰 Meet the financial wizard behind our Cultural Committee, Pratham Vajifdar, our Treasurer! 💼📊</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="../nuvyuva/images/shivam.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Shivam Joshi</h2>
+                            <h3>CULTURAL HEAD</h3>
+                            <div class="team-overlay">
+                                <p>🌟 Meet Shivam Joshi, our Cultural Head and the mastermind behind the scenes! 🎭🎉</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="container">
+            <div class="section-title">
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="../nuvyuva/images/karishma.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Karishma Sewani</h2>
+                            <h3>OUTREACH HEAD</h3>
+                            <div class="team-overlay">
+                                <p>🚀 Introducing Karishma Sewani, the driving force behind our cultural outreach efforts! 🌟🌍</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="../nuvyuva/images/gaurav.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Gaurav Rai</h2>
+                            <h3>OUTREACH HEAD</h3>
+                            <div class="team-overlay">
+                                <p>🌍 Meet Gaurav Rai, the cultural connector extraordinaire! ✨🤝</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="../nuvyuva/images/deesha.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Deesha Bhansali</h2>
+                            <h3>DECORATION HEAD</h3>
+                            <div class="team-overlay">
+                                <p>✨ Introducing Deesha Bhansali, the visionary leader of our Decoration Committee! 🖌️🌟</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="../nuvyuva/images/aashna.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Aashna Achary</h2>
+                            <h3>DECORATION HEAD</h3>
+                            <div class="team-overlay">
+                                <p>🌟 Meet Aashna Aacharya, the creative genius behind our Cultural Committee’s decor! 🎨✨</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="container">
+            <div class="section-title">
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="../nuvyuva/images/hiya.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Hiya Shah</h2>
+                            <h3>SOCIAL MEDIA HEAD</h3>
+                            <div class="team-overlay">
+                                <p>🌟 Meet Hiya Shah, the social media sorcerer of our Cultural Committee! ✨📸 </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="../nuvyuva/images/aisha.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Aisha Agwan</h2>
+                            <h3>SOCIAL MEDIA HEAD</h3>
+                            <div class="team-overlay">
+                                <p>🌟 Meet Aisha Agwan, the creative genius behind our social media magic! 📱</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="../nuvyuva/images/ansh.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Ansh Dua</h2>
+                            <h3>DESIGNING HEAD</h3>
+                            <div class="team-overlay">
+                                <p>🎨 Meet the artistic virtuoso leading our Cultural Committee's creative charge, Ansh Dua! ✨</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="../nuvyuva/images/husena.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Husena Limdiwala</h2>
+                            <h3>DESIGNING HEAD</h3>
+                            <div class="team-overlay">
+                                <p>🎨 Meet the artistic virtuoso leading our Cultural Committee's creative charge, Husena Limdiwala! ✨</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="container">
+            <div class="section-title">
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="../nuvyuva/images/suraj.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Suraj Pillai</h2>
+                            <h3>MARKETING HEAD</h3>
+                            <div class="team-overlay">
+                                <p>📣 Meet the marketing maestro of our Cultural Committee, Suraj Pillai! 🌟</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="../nuvyuva/images/khushi.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Khushi Taneja</h2>
+                            <h3>MARKETING HEAD</h3>
+                            <div class="team-overlay">
+                                <p>📣 Meet the marketing maestro of our Cultural Committee, Khushi Taneja! 🌟</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="../nuvyuva/images/prathamrana.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Pratham Rana</h2>
+                            <h3>CONTENT HEAD</h3>
+                            <div class="team-overlay">
+                                <p>Meet the wordsmith extraordinaire of our Cultural Committee, Pratham Rana, our Head of Content! 🖋️✨</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="../nuvyuva/images/siddharth.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Siddharth Deshpande</h2>
+                            <h3>MEDIA HEAD</h3>
+                            <div class="team-overlay">
+                                <p>📸 Say hello to the visual virtuoso behind our Cultural Committee's moments, Siddharth Deshpande, our Head of Media! 🎥✨</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
 
-            <div class="col-12 col-md-8 col-lg-7">
-                <header class="entry-header">
-                    <h2 class="entry-title">What is NUV युवा 2.0 ?</h2>
-                </header>
+        <!------------------------------------------------------------------------------------------------------------->
+        <div style="height: 120px"></div>
 
-                <div class="entry-content">
-                    <p>NUV-YUVA is an inter-college festival that encourages students from various institutions all over gujarat to demonstrate their ability and talents in various fields and events. The event aims to bring together cultural, technical and sports aspects and merge them together with knowledge and enjoyment.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div>
-    <header class="entry-header elements-heading">
-      <center> <h2 class="entry-title" style="padding-right: 3%;">Our Team</h2></center> 
-    </header>
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <figure class="footer-logo">
+                            <a href="#"><img src="images/cc_logo.png" alt="logo"></a>
+                        </figure>
 
-<!------------------------------------------------------------------------------------------------------->
-<div class="container">
-    <div class="section-title">
-       
-    </div>
-    <div class="team-row">
-        <div class="column">
-            <div class="team-4">
-                <div class="team-img">
-                    <img src="images/rucha.jpg" alt="Team Image">
-                    <div class="team-social">
-                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="social-yt" href=""><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="team-content">
-                    <h2>Rucha Soni</h2>
-                    <h3>PRESIDENT</h3>
-                </div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="team-4">
-                <div class="team-img">
-                    <img src="images/jashit.jpg" alt="Team Image">
-                    <div class="team-social">
-                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="social-yt" href=""><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="team-content">
-                    <h2>Jashit Kandhari</h2>
-                    <h3>PRESIDENT</h3>
-                </div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="team-4">
-                <div class="team-img">
-                    <img src="images/pratham.jpg" alt="Team Image">
-                    <div class="team-social">
-                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="social-yt" href=""><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="team-content">
-                    <h2>Pratham Vajifdar</h2>
-                    <h3>TREASURER</h3>
-                </div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="team-4">
-                <div class="team-img">
-                    <img src="images/shivam.jpg" alt="Team Image">
-                    <div class="team-social">
-                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="social-yt" href=""><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="team-content">
-                    <h2>Shivam Joshi</h2>
-                    <h3>CULTURAL HEAD</h3>
-                </div>
-            </div>
-        </div>
-    </div> 
-</div>
 
-<div class="container">
-    <div class="section-title">
-       
-    </div>
-    <div class="team-row">
-        <div class="column">
-            <div class="team-4">
-                <div class="team-img">
-                    <img src="images/karishma.jpg" alt="Team Image">
-                    <div class="team-social">
-                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="social-yt" href=""><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="team-content">
-                    <h2>Karishma Sewani</h2>
-                    <h3>OUTREACH HEAD</h3>
-                </div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="team-4">
-                <div class="team-img">
-                    <img src="images/gaurav.jpg" alt="Team Image">
-                    <div class="team-social">
-                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="social-yt" href=""><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="team-content">
-                    <h2>Gaurav Rai</h2>
-                    <h3>OUTREACH HEAD</h3>
-                </div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="team-4">
-                <div class="team-img">
-                    <img src="images/deesha.jpg" alt="Team Image">
-                    <div class="team-social">
-                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="social-yt" href=""><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="team-content">
-                    <h2>Deesha Bhansali</h2>
-                    <h3>DECORATION HEAD</h3>
-                </div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="team-4">
-                <div class="team-img">
-                    <img src="images/aashna.jpg" alt="Team Image">
-                    <div class="team-social">
-                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="social-yt" href=""><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="team-content">
-                    <h2>Aashna Achary</h2>
-                    <h3>DECORATION HEAD</h3>
-                </div>
-            </div>
-        </div>
-    </div> 
-</div>
-<div class="container">
-    <div class="section-title">
-       
-    </div>
-    <div class="team-row">
-        <div class="column">
-            <div class="team-4">
-                <div class="team-img">
-                    <img src="images/hiya.jpg" alt="Team Image">
-                    <div class="team-social">
-                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="social-yt" href=""><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="team-content">
-                    <h2>Hiya Shah</h2>
-                    <h3>SOCIAL MEDIA HEAD</h3>
-                </div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="team-4">
-                <div class="team-img">
-                    <img src="images/aisha.jpg" alt="Team Image">
-                    <div class="team-social">
-                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="social-yt" href=""><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="team-content">
-                    <h2>Aisha Agwan</h2>
-                    <h3>SOCIAL MEDIA HEAD</h3>
-                </div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="team-4">
-                <div class="team-img">
-                    <img src="images/ansh.jpg" alt="Team Image">
-                    <div class="team-social">
-                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="social-yt" href=""><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="team-content">
-                    <h2>Ansh Dua</h2>
-                    <h3>DESIGNING HEAD</h3>
-                </div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="team-4">
-                <div class="team-img">
-                    <img src="images/husena.jpg" alt="Team Image">
-                    <div class="team-social">
-                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="social-yt" href=""><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="team-content">
-                    <h2>Husena Limdiwala</h2>
-                    <h3>DESIGNING HEAD</h3>
-                </div>
-            </div>
-        </div>
-    </div> 
-</div>
-<div class="container">
-    <div class="section-title">
-       
-    </div>
-    <div class="team-row">
-        <div class="column">
-            <div class="team-4">
-                <div class="team-img">
-                    <img src="images/suraj.jpg" alt="Team Image">
-                    <div class="team-social">
-                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="social-yt" href=""><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="team-content">
-                    <h2>Suraj Pillai</h2>
-                    <h3>MARKETING HEAD</h3>
-                </div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="team-4">
-                <div class="team-img">
-                    <img src="images/niyati.jpg" alt="Team Image">
-                    <div class="team-social">
-                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="social-yt" href=""><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="team-content">
-                    <h2>Nitati Mukul</h2>
-                    <h3>MARKETING HEAD</h3>
-                </div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="team-4">
-                <div class="team-img">
-                    <img src="images/prathamrana.jpg" alt="Team Image">
-                    <div class="team-social">
-                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="social-yt" href=""><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="team-content">
-                    <h2>Pratham Rana</h2>
-                    <h3>CONTENT HEAD</h3>
-                </div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="team-4">
-                <div class="team-img">
-                    <img src="images/siddharth.jpg" alt="Team Image">
-                    <div class="team-social">
-                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="social-yt" href=""><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="team-content">
-                    <h2>Siddharth Deshpande</h2>
-                    <h3>MEDIA HEAD</h3>
-                </div>
-            </div>
-        </div>
-    </div> 
-</div>
-<!------------------------------------------------------------------------------------------------------------->
 
-    
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | by <a>Cultural
+                            Committee</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 
-<div style="height: 120px"></div>
-
-<footer class="site-footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <figure class="footer-logo">
-                    <a href="#"><img src="images/cc_logo.png" alt="logo"></a>
-                </figure>
-
-                
-
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | by <a>Cultural Committee</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-
-                <div class="footer-social">
-                    <ul class="flex flex-wrap justify-content-center align-items-center">
-                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    </ul>
+                        <div class="footer-social">
+                            <ul class="flex flex-wrap justify-content-center align-items-center">
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </footer>
+
+        <div class="back-to-top flex justify-content-center align-items-center">
+            <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M1395 1184q0 13-10 23l-50 50q-10 10-23 10t-23-10l-393-393-393 393q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l466 466q10 10 10 23z" />
+                </svg></span>
         </div>
-    </div>
-</footer>
 
-<div class="back-to-top flex justify-content-center align-items-center">
-    <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1395 1184q0 13-10 23l-50 50q-10 10-23 10t-23-10l-393-393-393 393q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg></span>
-</div>
-
-<script type='text/javascript' src='js/jquery.js'></script>
-<script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
-<script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
-<script type='text/javascript' src='js/swiper.min.js'></script>
-<script type='text/javascript' src='js/jquery.countdown.min.js'></script>
-<script type='text/javascript' src='js/circle-progress.min.js'></script>
-<script type='text/javascript' src='js/jquery.countTo.min.js'></script>
-<script type='text/javascript' src='js/custom.js'></script>
+        <script type='text/javascript' src='js/jquery.js'></script>
+        <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
+        <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+        <script type='text/javascript' src='js/swiper.min.js'></script>
+        <script type='text/javascript' src='js/jquery.countdown.min.js'></script>
+        <script type='text/javascript' src='js/circle-progress.min.js'></script>
+        <script type='text/javascript' src='js/jquery.countTo.min.js'></script>
+        <script type='text/javascript' src='js/custom.js'></script>
 
 </body>
+
 </html>
