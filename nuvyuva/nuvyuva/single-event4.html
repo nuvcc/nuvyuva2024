@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>NUV युवा</title>
 
@@ -18,72 +19,135 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery .box-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+            gap: 1.5rem;
+            align-items: center
+        }
+
+        .gallery .box-container .box {
+            position: relative;
+            border: 1rem solid #ffffff;
+            border-radius: 1.7rem;
+            height: 25rem;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .gallery .box-container .box img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+
+        .gallery .box-container .box .title {
+            position: absolute;
+            top: -10rem;
+            left: 0;
+            right: 0;
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+
+
+        .gallery .box-container .box .icons {
+            position: absolute;
+            bottom: -10rem;
+            left: 0;
+            right: 0;
+            background: #333;
+            padding-top: 1rem;
+            text-align: center;
+        }
+
+        .gallery .box-container .box:hover .icons {
+            bottom: 0;
+        }
+
+        .gallery .box-container .box .icons a {
+            font-size: 2rem;
+            margin: .5rem 1rem;
+            color: #fff;
+        }
+
+        .gallery .box-container .box .icons a:hover {
+            color: var(--main-color);
+        }
+    </style>
 </head>
+
 <body class="single-event-page">
-<header class="site-header">
-    <div class="header-bar">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-10 col-lg-2 order-lg-1">
-                    <div class="site-branding">
-                        <div class="site-title">
-                            <a href="#"><img src="images/logo.png" alt="logo"></a>
-                        </div><!-- .site-title -->
-                    </div><!-- .site-branding -->
-                </div><!-- .col -->
+    <header class="site-header">
+        <div class="header-bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-10 col-lg-2 order-lg-1">
+                        <div class="site-branding">
+                            <div class="site-title">
+                                <a href="#"><img src="images/cc_logo.png" alt="logo"></a>
+                            </div><!-- .site-title -->
+                        </div><!-- .site-branding -->
+                    </div><!-- .col -->
 
-                <div class="col-2 col-lg-7 order-3 order-lg-2">
-                    <nav class="site-navigation">
-                        <div class="hamburger-menu d-lg-none">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div><!-- .hamburger-menu -->
+                    <div class="col-2 col-lg-7 order-3 order-lg-2">
+                        <nav class="site-navigation">
+                            <div class="hamburger-menu d-lg-none">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div><!-- .hamburger-menu -->
 
-                        <ul>
-                            <li><a href="../nuvyuva/index.html">Home</a></li>
-                            <li><a href="../nuvyuva/elements.html">About us</a></li>
-                            <li><a href="../nuvyuva/events.html">Events</a></li>
-                            <li><a href="../nuvyuva/events-news.html">Gallery</a></li>
-                            <li><a href="../nuvyuva/contact.html">Contact</a></li>
-                        </ul>
-                    </nav><!-- .site-navigation -->
-                </div><!-- .col -->
+                            <ul>
+                                <li><a href="../nuvyuva/index.html">Home</a></li>
+                                <li><a href="../nuvyuva/elements.html">About us</a></li>
+                                <li><a href="../nuvyuva/events.html">Events</a></li>
+                                <li><a href="../nuvyuva/events-news.html">Gallery</a></li>
+                                <li><a href="../nuvyuva/contact.html">Contact</a></li>
+                            </ul>
+                        </nav><!-- .site-navigation -->
+                    </div><!-- .col -->
 
-                <div class="col-lg-3 d-none d-lg-block order-2 order-lg-3">
-                    <div class="buy-tickets">
-                        <a class="btn gradient-bg" href="/events.html">Buy Tickets</a>
-                    </div><!-- .buy-tickets -->
-                </div><!-- .col -->
-            </div><!-- .row -->
-        </div><!-- .container-fluid -->
-    </div><!-- .header-bar -->
+                    <div class="col-lg-3 d-none d-lg-block order-2 order-lg-3">
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container-fluid -->
+        </div><!-- .header-bar -->
 
-    <div class="page-header single-event-page-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <header class="entry-header">
-                        <h1 class="entry-title">Summer Festival in Detroit.</h1>
-                    </header>
+        <div class="page-header single-event-page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <header class="entry-header">
+                            <h1 class="entry-title">Ganesh Chaturthi</h1>
+                        </header>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</header><!-- .site-header -->
-
-<div class="container">
+    </header><!-- .site-header -->
+    <center><h2 class="entry-title" style="color: #df2cec;font-size: 500%;"><b>Ganesh Chaturthi</b></h2></center></br>
+    <center><figure class="events-thumbnail">
+        <img src="../nuvyuva/event-poster/ganesh chaturthi.png" alt="" width="400" height="400">
+    </figure></center>
+    <!--<div class="container">
     <div class="row">
         <div class="col-12 single-event">
             <div class="event-content-wrap">
                 <header class="entry-header flex flex-wrap justify-content-between align-items-end">
                     <div class="single-event-heading">
-                        <h2 class="entry-title">2018 Summer Festival</h2>
+                        <h2 class="entry-title">2023 Navratri Festival</h2>
 
-                        <div class="event-location"><a href="#">Ford Field  2000 Brush St, Detroit, MI 48226, EE. UU.</a></div>
+                        <div class="event-location"><a href="#">Lukshmi Vilas Palace, Cricket Ground, Moti Baug, Vadodara, Gujarat 390001</a></div>
 
-                        <div class="event-date">May 29, 2018 @ 8:00 Pm - May 30, 2018 @ 4:00 Am</div>
+                        <div class="event-date">Oct 15, 2023 @ 8:00 Pm - Oct 25, 2023 @ 1:00 Am</div>
                     </div>
 
                     <div class="buy-tickets flex justify-content-center align-items-center">
@@ -92,7 +156,7 @@
                 </header>
 
                 <figure class="events-thumbnail">
-                    <img src="images/event-4.jpg" alt="">
+                    <img src="images/lvp.jpg" alt="">
                 </figure>
             </div>
         </div>
@@ -113,12 +177,12 @@
                             <div class="single-event-details">
                                 <div class="single-event-details-row">
                                     <label>Start:</label>
-                                    <p>June 17 @ 09:00 am</p>
+                                    <p>Oct 15 @ 08:00 pm</p>
                                 </div>
 
                                 <div class="single-event-details-row">
                                     <label>End:</label>
-                                    <p>June 22 @ 07:30 am</p>
+                                    <p>Oct 25 @ 01:30 am</p>
                                 </div>
 
                                 <div class="single-event-details-row">
@@ -133,18 +197,16 @@
 
                                 <div class="single-event-details-row">
                                     <label>Tags:</label>
-                                    <p><a href="#">festivals</a>, <a href="#">music</a>, <a href="#">concert</a></p>
+                                    <p><a href="#">festivals</a>, <a href="#">music</a>
                                 </div>
                             </div>
 
-                            <div class="single-event-map">
-                                <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=university of san francisco&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                            </div>
+                            <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=laxmi villa &amp;t=&amp;z=9&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://connectionsgame.org/">Connections NYT</a></div><style>.mapouter{position:relative;text-align:right;width:600px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}.gmap_iframe {width:600px!important;height:400px!important;}</style></div>
                         </div>
                     </div>
 
                     <div id="tab_venue" class="tab-content">
-                        <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
+                        <p>Address: Indumati Mahal, Lukshmi Villas Palace 1/1 Jawaharlal Nehru Mar Opp, Gujarat 390001</p>
                     </div>
 
                     <div id="tab_organizers" class="tab-content">
@@ -313,48 +375,148 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->
+    <!------------------------------------------------------------------------------------------------------------->
+    <!-- gallery section starts  -->
 
-<footer class="site-footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <figure class="footer-logo">
-                    <a href="#"><img src="images/logo.png" alt="logo"></a>
-                </figure>
+    <section class="gallery" id="gallery">
 
-               
 
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Dhyan Patel</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        <div class="box-container">
 
-                <div class="footer-social">
-                    <ul class="flex flex-wrap justify-content-center align-items-center">
-                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    </ul>
+            <div class="box">
+                <img src="images/1.jpg" alt="">
+                <h3 class="title">photos and events</h3>
+
+            </div>
+
+            <center>
+                <div>
+                    <video width="400" height="260" controls>
+                        <source src="images/g-12.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                    </video>
+                </div>
+            </center>
+
+            <div class="box">
+                <img src="images/90.jpg" alt="">
+                <h3 class="title">photos and events</h3>
+
+            </div>
+
+            <div class="box">
+                <img src="images/dj123.jpg" alt="">
+                <h3 class="title">photos and events</h3>
+
+            </div>
+
+            <div class="box">
+                <img src="images/2.jpg" alt="">
+                <h3 class="title">photos and events</h3>
+
+            </div>
+
+            <div class="box">
+                <img src="images/3.jpg" alt="">
+                <h3 class="title">photos and events</h3>
+
+            </div>
+
+            <center>
+                <div>
+                    <video width="400" height="260" controls>
+                        <source src="images/g-12.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                    </video>
+                </div>
+            </center>
+
+            <div class="box">
+                <img src="images/djparty.jpg" alt="">
+                <h3 class="title">photos and events</h3>
+
+            </div>
+
+
+            <div class="box">
+                <img src="images/summer.jpg" alt="">
+                <h3 class="title">photos and events</h3>
+
+            </div>
+
+            <div class="box">
+                <img src="images/event-3.jpg" alt="">
+                <h3 class="title">photos and events</h3>
+
+            </div>
+
+            <div class="box">
+                <img src="images/event-1.jpg" alt="">
+                <h3 class="title">photos and events</h3>
+
+            </div>
+            <center>
+                <div>
+                    <video width="400" height="260" controls>
+                        <source src="images/g-12.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                    </video>
+                </div>
+            </center>
+        </div></br>
+        <center><a href="../nuvyuva/events-news.html"
+                class="btn">More</a></center>
+            
+    </section></br></br></br>
+
+    <!------------------------------------------------------------------------------------------------------------->
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <figure class="footer-logo">
+                        <a href="#"><img src="images/cc_logo.png" alt="logo"></a>
+                    </figure>
+
+
+
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;
+                    <script>document.write(new Date().getFullYear());</script> All rights reserved | <i
+                        class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com"
+                        target="_blank">Dhyan Patel</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+                    <div class="footer-social">
+                        <ul class="flex flex-wrap justify-content-center align-items-center">
+                            <li><a href="https://www.linkedin.com/in/nuv-cultural-committee/"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://www.instagram.com/nuv.cc/"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.youtube.com/@NUVCulturalCommittee"><i class="fa fa-youtube-play"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
+    </footer>
+
+    <div class="back-to-top flex justify-content-center align-items-center">
+        <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M1395 1184q0 13-10 23l-50 50q-10 10-23 10t-23-10l-393-393-393 393q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l466 466q10 10 10 23z" />
+            </svg></span>
     </div>
-</footer>
 
-<div class="back-to-top flex justify-content-center align-items-center">
-    <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1395 1184q0 13-10 23l-50 50q-10 10-23 10t-23-10l-393-393-393 393q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg></span>
-</div>
-
-<script type='text/javascript' src='js/jquery.js'></script>
-<script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
-<script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
-<script type='text/javascript' src='js/swiper.min.js'></script>
-<script type='text/javascript' src='js/jquery.countdown.min.js'></script>
-<script type='text/javascript' src='js/circle-progress.min.js'></script>
-<script type='text/javascript' src='js/jquery.countTo.min.js'></script>
-<script type='text/javascript' src='js/custom.js'></script>
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
+    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+    <script type='text/javascript' src='js/swiper.min.js'></script>
+    <script type='text/javascript' src='js/jquery.countdown.min.js'></script>
+    <script type='text/javascript' src='js/circle-progress.min.js'></script>
+    <script type='text/javascript' src='js/jquery.countTo.min.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
 
 </body>
+
 </html>
