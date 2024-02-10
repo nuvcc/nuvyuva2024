@@ -477,7 +477,7 @@ a:hover, a:active {
 
 @media screen and (min-width: 1200px){
     .hero-content {
-        padding-top: 400px;
+        padding-top: auto;
     }
 
     .swiper-button-next {
