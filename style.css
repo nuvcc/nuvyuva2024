@@ -1892,7 +1892,7 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .contact-location-details .entry-title {
-    font-size: 60px;
+    font-size: 39px;
     font-weight: bold;
     color: #232127;
 }
@@ -1911,7 +1911,7 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .contact-location-details .entry-footer li {
-    padding-left: 48px;
+    padding-left: 0px;
     margin-bottom: 12px;
     font-size: 18px;
     color: #232127;
