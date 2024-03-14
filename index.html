@@ -466,7 +466,53 @@
   color: #fff;
 }
 
+
+.video-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.video-container .p {
+	min-width: 100%;
+	min-height: 100%;
+  position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+}
+
+.video-container:after {
+	content: '';
+	z-index: 0;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+}
 </style>
+</section>
+<section id="hero" class="d-flex flex-column justify-content-center">
+  <div class="video-container">
+    <video src="assets/img/VN20240313_183108 (1).mp4" autoplay muted loop></video>
+  </div><br><br><br><br><br><br>
+  <center><div class="container" data-aos="zoom-in" data-aos-delay="100">
+    <h1 style="font-size: 4.5rem; color: #0e76a8;"><b>NUV युवा 2024</b></h1> 
+    <p >
+      <span style="color: #0e76a8;font-size: 2.5rem;" class="typed" data-typed-items="Tech Events, E-Sports Events,Sports Events, Cultural Events,Concert Night"></span></p><br>
+      <a class="btn1 gradient-bg1" href="https://nuv.ac.in/nuv_yuva/" target="_blank">Register Now </a><br><br><br>
+      <a href="https://www.linkedin.com/in/nuv-cultural-committee/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>&nbsp;&nbsp;
+         <a href="https://www.youtube.com/@NUVCulturalCommittee" class="youtube" target="_blank"><i class="bx bxl-youtube"></i></a> &nbsp;&nbsp;
+         <a href="https://www.instagram.com/nuv.cc/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a> 
+        </div>    
+  </div></center>
+</section><br><br><br><br><br><br><br><br><br><br><br>
+  <!-- End Hero -->
 <!--<section id="hero" class="d-flex flex-column justify-content-center">
   <div class="container" data-aos="zoom-in" data-aos-delay="100"><br><br><br><br><br><br><br>
     <h1 style="font-size: 4.5rem; color: #0e76a8;"><b>NUV युवा 2024</b></h1> 
@@ -480,7 +526,7 @@
      </div>
   </div>
 </section>-->
-<section id="index" class="d-flex flex-column justify-content-center">
+<!--<section id="index" class="d-flex flex-column justify-content-center">
   <div class="img">
     <img src="assets/img/home.jpg" height="100%" width="100%"  style=" margin-top: -60px; z-index: 5;">
     <center><div class="container" data-aos="zoom-in" data-aos-delay="100">
@@ -1192,10 +1238,6 @@
                 <li>Event Duration: 4-5 hrs</li>
               </ul>
             </div>          
-            <h3 class="resume-title">Concert Night</h3>
-            <div class="resume-item">
-              <h4>COMING SOON!!</h4>
-            </div>
           </div>
           <div class="col-lg-6">
             <h3 class="resume-title">E-Sports Event</h3>
@@ -1228,7 +1270,7 @@
               <h4>CS-GO</h4>
               <h5>3-4-2024 To 5-4-2024</h5>
               <ul>
-                <li>PRICE: ₹500/-(PER GROUP)</li>
+                <li>PRICE: ₹500/-(PRE GROUP)</li>
                 <li>MEMBER: MAX 5 PERSONS</li>
               </ul>
             </div>
@@ -1281,6 +1323,10 @@
                 <li>MEMBER: SOLO / GROUP</li>
               </ul>
             </div> 
+            <h3 class="resume-title">Concert Night</h3>
+            <div class="resume-item">
+              <h4>COMING SOON!!</h4>
+            </div>
           </div>
   
         </div>
